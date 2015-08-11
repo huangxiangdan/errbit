@@ -111,11 +111,11 @@ class App
   end
 
   def bitbucket_url
-    "https://bitbucket.org/#{bitbucket_repo}" if bitbucket_repo?
+    "http://gitlab.kechenggezi.com/#{bitbucket_repo}" if bitbucket_repo?
   end
 
   def bitbucket_url_to_file(file)
-    "#{bitbucket_url}/src/#{repo_branch}/#{file}"
+    "#{bitbucket_url}/blob/#{repo_branch}/#{file}"
   end
 
 
